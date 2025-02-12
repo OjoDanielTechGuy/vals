@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
   musicToggle.addEventListener("click", function () {
     if (audio.paused) {
       audio.play();
-      musicIcon.textContent = "pause"; // Update icon
+      musicIcon.src = "pause.svg"; // Change to pause icon
     } else {
       audio.pause();
-      musicIcon.textContent = "play_arrow"; // Update icon back
+      musicIcon.src = "play.svg"; // Change to play icon
     }
   });
 });
