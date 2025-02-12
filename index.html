@@ -13,7 +13,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
-    <script src="./script.js" defer></script>
+    <script src="script.js" defer></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link
       rel="stylesheet"
@@ -40,7 +40,7 @@
     <p class="greatVibe text-7xl text-pink-700 cursor-pointer">Adunni ❤</p>
     <p class="text-sm text-pink-700">A Love Written in the Stars</p>
   </div>
-  <body class="h-[101svh]">
+  <body class="h-[101svh] w-screen">
     <section class="mt-4 lg:mx-8 mx-2">
       <nav class="flex justify-between mt-5">
         <div class="greatVibe text-4xl font-bold cursor-pointer">
@@ -53,22 +53,27 @@
       <div class="flex justify-between items-center lg:flex-row flex-col mt-8">
         <div class="mt-5 flex justify-center flex-col items-center flex-grow">
           <h1
-            class="lg:text-[8rem] greatVibe lg:leading-24 text-center text-pretty text-[5.5rem]"
+            class="lg:text-[8rem] greatVibe lg:leading-24 text-center text-pretty text-[5rem]"
           >
             This One’s for You <br />
             <span>Samuel...</span>
           </h1>
 
-          <p class="w-[30rem] lg:my-6 my-3 text-sm">
+          <p class="w-[30rem] lg:my-6 my-3 text-sm text-center">
             Every heartbeat of mine echoes your name. Every sunrise reminds me
             of your warmth. This Valentine’s, I celebrate us.
+          </p>
+          <p class="text-xs rounded-full border-br-3 p-2">
+            Read My Love Letter ❤
           </p>
         </div>
 
         <div class="flex flex-col">
           <div class="w-[30rem] h-fit">
             <!-- Bento Grid -->
-            <div class="grid grid-cols-3 gap-4">
+            <div
+              class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 row-auto"
+            >
               <!-- Large Box (Top Left) -->
               <div
                 class="col-span-2 row-span-2 bg-pink-100 rounded-lg p-4 flex items-center justify-center"
@@ -78,7 +83,7 @@
 
               <!-- Small Box (Top Right) -->
               <div
-                class="col-span-1 row-span-1 bg-pink-200 rounded-lg p-4 flex items-center justify-center"
+                class="col-span-1 row-auto bg-pink-200 rounded-lg p-4 flex items-center justify-center"
               >
                 <p class="text-pink-700 text-center">❤️</p>
               </div>
@@ -92,9 +97,13 @@
 
               <!-- Small Box (Bottom Left) -->
               <div
-                class="col-span-1 row-span-1 bg-pink-400 rounded-lg p-4 flex items-center justify-center"
+                class="col-span-1 row-auto bg-pink-400 rounded-lg p-4 flex items-center justify-center"
               >
-                <p class="text-pink-700 text-center">💖</p>
+                <p class="text-pink-700 text-center text-white text-balance">
+                  I 💖 You
+                </p>
+
+                placeholder
               </div>
 
               <!-- Large Box (Bottom Right) -->
@@ -123,8 +132,10 @@
       <span class="material-symbols-outlined"> Start </span>
     </button>
 
-    <div className="absolute bottom-0">
-      <p class="">All right reserved</p>
-    </div>
+    <!-- <footer>
+      <div className="absolute bottom-0 text-gray-50 w-full text-center">
+        <p class="text-xs">All right reserved</p>
+      </div>
+    </footer> -->
   </body>
 </html>
