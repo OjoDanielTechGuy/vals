@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #ffb347;
+        --background-color: #ffc2c7;
+        --love-color: #8f0a1d;
+        --love-color-light: #b01729;
+        --black: #2d2d2d;
+      }
+    </style>
+  </head>
+  <body class="mt-4 lg:mx-8 mx-2 h-[101svh]">
+    <nav class="flex justify-between mt-5">
+      <div class="greatVibe text-4xl font-bold">Adunni ❤</div>
+      <div class="rounded-sm p-2 cursor-pointer">
+        <span class="material-symbols-outlined"> home </span>
+      </div>
+    </nav>
+    <div class="flex justify-between items-center lg:flex-row flex-col">
+      <div class="mt-5 flex justify-center flex-col items-center">
+        <h1 class="text-[8rem] greatVibe leading-24 text-center text-pretty">
+          This One’s for You <br />
+          <span>Samuel...</span>
+        </h1>
+
+        <p class="w-[30rem] my-6">
+          Every heartbeat of mine echoes your name. Every sunrise reminds me of
+          your warmth. This Valentine’s, I celebrate us.
+        </p>
+      </div>
+
+      <div class="flex flex-col">
+        <div class="w-[30rem] h-screen flex gap-4 items-center">
+          <!-- Top to Bottom Swiper -->
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <!-- Slides will be inserted dynamically -->
+            </div>
+          </div>
+
+          <!-- Bottom to Top Swiper -->
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <!-- Slides will be inserted dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- something -->
+
+    <div class="absolute top-0">
+      <!-- Top to Bottom Swiper -->
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <!-- Slides will be inserted dynamically -->
+        </div>
+      </div>
+
+      <!-- Bottom to Top Swiper -->
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <!-- Slides will be inserted dynamically -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    defer
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</html>
