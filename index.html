@@ -8,7 +8,10 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       defer
     ></script>
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=play_arrow"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
@@ -19,7 +22,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home"
     />
-    <title>Adunni ❤ Samuel</title>
+    <title>Naomi ❤</title>
     <style type="text/tailwindcss">
       @theme {
         --color-clifford: #ffb347;
@@ -37,14 +40,14 @@
     <div
       class="loader-spinner border-8 border-pink-100 border-t-8 border-t-pink-500 rounded-full w-16 h-16 animate-spin"
     ></div>
-    <p class="greatVibe text-7xl text-pink-700 cursor-pointer">Adunni ❤</p>
+    <p class="greatVibe text-7xl text-pink-700 cursor-pointer">Naomi ❤</p>
     <p class="text-sm text-pink-700">A Love Written in the Stars</p>
   </div>
   <body class="h-[101svh] w-screen">
     <section class="mt-4 lg:mx-8 mx-2">
       <nav class="flex justify-between mt-5">
         <div class="greatVibe text-4xl font-bold cursor-pointer">
-          <a href="/">Adunni ❤</a>
+          <a href="/">Naomi ❤</a>
         </div>
         <div class="rounded-sm p-2 cursor-pointer">
           <span class="material-symbols-outlined"> home </span>
@@ -53,10 +56,10 @@
       <div class="flex justify-between items-center lg:flex-row flex-col mt-8">
         <div class="my-5 flex justify-center flex-col items-center flex-grow">
           <h1
-            class="lg:text-[8rem] greatVibe lg:leading-24 text-center text-pretty text-[5rem]"
+            class="lg:text-[8rem] greatVibe lg:leading-24 text-center text-pretty text-[4.5rem]"
           >
             This One’s for You <br />
-            <span>Samuel...</span>
+            <span>Ewatomi</span>
           </h1>
 
           <p class="w-[30rem] lg:my-6 my-3 text-sm text-center">
@@ -64,54 +67,82 @@
             of your warmth. This Valentine’s, I celebrate us.
           </p>
           <p
-            class="text-xs rounded-full border-r-3 border-b-3 hover:border-r-3 hover:border-b-3 hover:border-[#2d2d2d] p-2"
+            class="text-xs rounded-full border-r-3 border-b-3 hover:border-r-3 hover:border-b-3 hover:border-[#2d2d2d] p-2 hover:scale-110"
           >
             Read My Love Letter ❤
           </p>
         </div>
 
         <div class="flex flex-col">
-          <div class="w-[30rem] h-fit">
+          <div class="h-fit">
             <!-- Bento Grid -->
-            <div
-              class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 row-auto"
-            >
-              <!-- Large Box (Top Left) -->
-              <div
-                class="col-span-2 row-span-2 bg-pink-100 rounded-lg p-4 flex items-center justify-center"
-              >
-                <p class="text-pink-700 text-center">"You are my sunshine."</p>
-              </div>
+            <div class="relative w-[600px] h-[600px] mx-auto">
+              <!-- Main Heart SVG with Image -->
+              <svg viewBox="0 0 500 500" class="w-full h-full">
+                <defs>
+                  <!-- Heart-shaped clipPath -->
+                  <clipPath id="heart-clip">
+                    <path
+                      d="M250,91.4C181.5-39.3,21.7,14,21.7,126.5c0,63.3,56,130.8,228.3,234c172.3-103.2,228.3-170.7,228.3-234C478.3,14,318.5-39.3,250,91.4z"
+                      fill="none"
+                      stroke="none"
+                    />
+                  </clipPath>
+                </defs>
 
-              <!-- Small Box (Top Right) -->
-              <div
-                class="col-span-1 row-auto bg-pink-200 rounded-lg p-4 flex items-center justify-center"
-              >
-                <p class="text-pink-700 text-center">❤️</p>
-              </div>
+                <!-- Single image covering entire heart -->
+                <g clip-path="url(#heart-clip)">
+                  <image
+                    href="./5.jpg"
+                    x="0"
+                    y="-30"
+                    width="500"
+                    height="500"
+                    preserveAspectRatio="xMidYMid slice"
+                  />
+                </g>
+              </svg>
 
-              <!-- Medium Box (Middle Right) -->
-              <div
-                class="col-span-1 row-span-1 bg-pink-300 rounded-lg p-4 flex items-center justify-center"
+              <!-- Smaller Love SVGs Around the Main Heart -->
+              <svg
+                viewBox="0 0 500 500"
+                class="absolute w-24 h-24 top-0 left-0 transform -translate-x-1/2 -translate-y-1/2"
               >
-                <p class="text-pink-700 text-center">"Forever & Always."</p>
-              </div>
+                <path
+                  d="M50,18.3C36.3-7.9,4.3,2.8,4.3,25.3c0,12.7,11.2,26.2,45.7,46.8c34.5-20.6,45.7-34.1,45.7-46.8c0-22.5-31.9-33.2-45.7-2.8z"
+                  fill="#ff1493"
+                />
+              </svg>
 
-              <!-- Small Box (Bottom Left) -->
-              <div
-                class="col-span-1 row-auto bg-pink-400 rounded-lg p-4 flex items-center justify-center"
+              <svg
+                viewBox="0 0 500 500"
+                class="absolute w-24 h-24 top-0 right-0 transform translate-x-1/2 -translate-y-1/2"
               >
-                <p class="text-pink-700 text-center text-white text-balance">
-                  I 💖 You
-                </p>
-              </div>
+                <path
+                  d="M50,18.3C36.3-7.9,4.3,2.8,4.3,25.3c0,12.7,11.2,26.2,45.7,46.8c34.5-20.6,45.7-34.1,45.7-46.8c0-22.5-31.9-33.2-45.7-2.8z"
+                  fill="#ff1493"
+                />
+              </svg>
 
-              <!-- Large Box (Bottom Right) -->
-              <div
-                class="col-span-2 row-span-2 bg-pink-500 rounded-lg p-4 flex items-center justify-center"
+              <svg
+                viewBox="0 0 500 500"
+                class="absolute w-24 h-24 bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2"
               >
-                <p class="text-white text-center">"My heart beats for you."</p>
-              </div>
+                <path
+                  d="M50,18.3C36.3-7.9,4.3,2.8,4.3,25.3c0,12.7,11.2,26.2,45.7,46.8c34.5-20.6,45.7-34.1,45.7-46.8c0-22.5-31.9-33.2-45.7-2.8z"
+                  fill="#ff1493"
+                />
+              </svg>
+
+              <svg
+                viewBox="0 0 500 500"
+                class="absolute w-24 h-24 bottom-0 right-0 transform translate-x-1/2 translate-y-1/2"
+              >
+                <path
+                  d="M50,18.3C36.3-7.9,4.3,2.8,4.3,25.3c0,12.7,11.2,26.2,45.7,46.8c34.5-20.6,45.7-34.1,45.7-46.8c0-22.5-31.9-33.2-45.7-2.8z"
+                  fill="#ff1493"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -120,7 +151,7 @@
     </section>
     <!-- Audio Element -->
     <audio id="background-music" loop>
-      <source src="your-song.mp3" type="audio/mpeg" />
+      <source src="./audio.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
 
@@ -129,7 +160,7 @@
       id="music-toggle"
       class="fixed bottom-4 right-4 p-3 bg-[#f73f57] text-white rounded-full shadow-lg hover:bg-[8b0015]transition-colors"
     >
-      <span class="material-symbols-outlined"> Start </span>
+      <img src="./play.svg" />
     </button>
 
     <!-- <footer>
