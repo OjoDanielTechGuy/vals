@@ -31,12 +31,32 @@ document.addEventListener("DOMContentLoaded", function () {
     modelContainer.style.display = "block";
   });
 
+  // Attempt autoplay (muted first)
+  audio.muted = true;
+  audio
+    .play()
+    .then(() => {
+      audio.muted = false; // Unmute if autoplay works
+    })
+    .catch(() => {
+      console.log("Autoplay blocked. Waiting for user interaction.");
+    });
+
+  // Ensure playback starts on any click (failsafe)
+  document.addEventListener(
+    "click",
+    function () {
+      if (audio.paused) {
+        audio.play();
+      }
+    },
+    { once: true }
+  ); // Runs only once to prevent spam
+
   // Toggle play/pause on button click
   musicToggle.addEventListener("click", function () {
     if (audio.paused) {
-      audio.play().catch((error) => {
-        console.log("Error playing audio:", error);
-      });
+      audio.play().catch((error) => console.log("Error playing audio:", error));
       musicIcon.src = "pause.svg"; // Change to pause icon
     } else {
       audio.pause();

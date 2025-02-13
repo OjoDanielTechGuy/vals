@@ -39,12 +39,95 @@ body {
   font-weight: bold;
   background: #ffb24767;
   border-radius: 10px;
-  
 }
-
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
-.animate-float { animation: float 3s ease-in-out infinite; }
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) scale(1.1) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+.floating-heart {
+  animation: float 4s infinite ease-in-out;
+  position: absolute;
+}
+
+/* Unique positions and sizes for variation */
+.heart-1 {
+  top: -20px;
+  left: 10%;
+  width: 30px;
+}
+.heart-2 {
+  top: 10%;
+  right: -20px;
+  width: 40px;
+  animation-delay: 0.5s;
+}
+.heart-3 {
+  bottom: 5%;
+  left: 15%;
+  width: 25px;
+  animation-delay: 1s;
+}
+.heart-4 {
+  bottom: 15%;
+  right: 5%;
+  width: 35px;
+  animation-delay: 1.5s;
+}
+/* Center the loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+}
+
+/* SVG size */
+.heart-loader {
+  width: 150px;
+  height: 150px;
+}
+
+/* Create the moving dot */
+.loader-dot {
+  fill: #ff1493;
+  r: 5;
+  animation: moveAlongPath 3s linear infinite;
+}
+
+/* Define motion along the path */
+@keyframes moveAlongPath {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+/* Apply animation along the heart path */
+.loader-dot {
+  offset-path: path(
+    "M250,91.4C181.5-39.3,21.7,14,21.7,126.5c0,63.3,56,130.8,228.3,234c172.3-103.2,228.3-170.7,228.3-234C478.3,14,318.5-39.3,250,91.4z"
+  );
+  offset-distance: 0%;
+}
