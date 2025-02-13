@@ -56,8 +56,10 @@
     >
       <div class="relative" id="closeModal">
         <!-- img spot -->
-        <div class="flex justify-center items-center p-2 relative">
-          <div class="absolute top-[15px] right-[28rem]">
+        <div
+          class="flex justify-center items-center p-2 relative mx-auto lg:mt-auto mt-[10%]"
+        >
+          <div class="absolute top-[15px] lg:right-[28rem] right-[15%]">
             <p class="rounded border-r-3 border-b-3 hover:border-[#ff1493] p-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,11 +87,11 @@
     <section class="mt-4 lg:mx-8 mx-2">
       <nav class="flex justify-between mt-5">
         <div class="greatVibe text-4xl font-bold cursor-pointer">
-          <a href="/">Naomi ❤</a>
+          <a href="./index.html">Naomi ❤</a>
         </div>
-        <div class="rounded-sm p-2 cursor-pointer">
+        <!-- <div class="rounded-sm p-2 cursor-pointer">
           <span class="material-symbols-outlined"> home </span>
-        </div>
+        </div> -->
       </nav>
       <div class="flex justify-between items-center lg:flex-row flex-col mt-3">
         <div class="my-3 flex justify-center flex-col items-center flex-grow">
@@ -190,7 +192,7 @@
     </section>
     <!-- Audio Element -->
     <audio id="background-music" loop>
-      <source src="audio.mp3" type="audio/mpeg" />
+      <source src="./audio.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
 
@@ -199,7 +201,7 @@
       id="music-toggle"
       class="fixed bottom-4 right-4 p-3 bg-[#f73f57] text-white rounded-full shadow-lg hover:bg-[#8b0015] transition-colors cursor-pointer border-b-3"
     >
-      <img src="play.svg" id="music-icon" class="cursor-pointer" />
+      <img src="pause.svg" id="music-icon" class="cursor-pointer" />
     </button>
   </body>
 </html>

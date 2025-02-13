@@ -34,7 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Toggle play/pause on button click
   musicToggle.addEventListener("click", function () {
     if (audio.paused) {
-      audio.play();
+      audio.play().catch((error) => {
+        console.log("Error playing audio:", error);
+      });
       musicIcon.src = "pause.svg"; // Change to pause icon
     } else {
       audio.pause();
