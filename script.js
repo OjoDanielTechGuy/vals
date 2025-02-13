@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const audio = document.getElementById("background-music");
   const musicToggle = document.getElementById("music-toggle");
   const musicIcon = document.getElementById("music-icon");
-
+  const closeIcon = document.getElementById("closeModal");
+  const modelContainer = document.getElementById("modelContainer");
   // Try autoplay with silent start (for browser compliance)
   audio.muted = true;
   audio
@@ -20,6 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch(() => {
       console.log("Autoplay blocked. Waiting for user interaction.");
     });
+
+  closeIcon.addEventListener("click", function () {
+    const imageSpot = modelContainer.parentElement;
+    imageSpot.style.display = "none";
+  });
 
   // Toggle play/pause on button click
   musicToggle.addEventListener("click", function () {
