@@ -24,14 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   closeIcon.addEventListener("click", function () {
-    const imageSpot = modelContainer.parentElement;
-    imageSpot.style.display = "none";
+    modelContainer.style.display = "none";
   });
 
   openModal.addEventListener("click", function () {
-    const openModel = modelContainer.parentElement;
-    openModel.style.display = "block";
+    modelContainer.style.display = "block";
   });
+
   // Toggle play/pause on button click
   musicToggle.addEventListener("click", function () {
     if (audio.paused) {
