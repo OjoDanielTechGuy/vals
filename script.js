@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const musicIcon = document.getElementById("music-icon");
   const closeIcon = document.getElementById("closeModal");
   const modelContainer = document.getElementById("modelContainer");
+  const openModal = document.getElementById("openModal");
   // Try autoplay with silent start (for browser compliance)
   audio.muted = true;
   audio
@@ -27,6 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
     imageSpot.style.display = "none";
   });
 
+  openModal.addEventListener("click", function () {
+    const openModel = modelContainer.parentElement;
+    openModel.style.display = "block";
+  });
   // Toggle play/pause on button click
   musicToggle.addEventListener("click", function () {
     if (audio.paused) {
